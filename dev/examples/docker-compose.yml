@@ -12,6 +12,8 @@ services:
       - db-data:/var/lib/postgresql/data
     networks:
       - wikinet
+    ports:
+      - "5432"
 
   wiki:
     image: requarks/wiki:beta
